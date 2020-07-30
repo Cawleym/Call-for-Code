@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="679.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResidentFunctionManage.SearchDataByLocationController">
+   <children>
+      <Label fx:id="ResultBG" contentDisplay="CENTER" layoutX="17.0" layoutY="201.0" prefHeight="327.0" prefWidth="544.0" style="-fx-background-color: #3FBFBF;" text="" textAlignment="CENTER" textFill="#56794e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="helloTxt" alignment="CENTER_LEFT" layoutX="25.0" layoutY="12.0" prefWidth="400.0" text="Search Official Water Data By Location">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="SearchBG" contentDisplay="CENTER" layoutX="17.0" layoutY="59.0" prefHeight="136.0" prefWidth="544.0" style="-fx-background-color: #d0d6d5;" text="" textAlignment="CENTER" textFill="#56794e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="StreetNameTag" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="83.0" text="Street Name">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="STNameField" layoutX="125.0" layoutY="81.0" prefWidth="150.0" />
+      <Label fx:id="CityTag" alignment="CENTER_RIGHT" layoutX="313.0" layoutY="84.0" text="City">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CityField" layoutX="376.0" layoutY="81.0" prefWidth="150.0" />
+      <Label fx:id="StreetNumTag" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="117.0" text="Street Num">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="ZipCodeTag" alignment="CENTER_RIGHT" layoutX="310.0" layoutY="118.0" text="Zip Code">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="DateTag" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="149.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="STNumField" layoutX="125.0" layoutY="116.0" prefWidth="150.0" />
+      <TextField fx:id="STNumField1" layoutX="376.0" layoutY="115.0" prefWidth="150.0" />
+      <DatePicker fx:id="TestDatePicker" layoutX="125.0" layoutY="147.0" prefWidth="150.0" />
+      <Button fx:id="submitButton" layoutX="313.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="27.0" prefWidth="100.0" text="Search" />
+      <TableView fx:id="UserLeadTable" layoutX="17.0" layoutY="241.0" prefHeight="108.0" prefWidth="539.0">
+         <columns>
+            <TableColumn fx:id="LeadDateCol" prefWidth="96.0" text="Date Submitted" />
+            <TableColumn fx:id="Lead2BK250Col" prefWidth="75.0" text="250ml" />
+            <TableColumn fx:id="Lead2BK750Col" prefWidth="75.0" text="750ml" />
+            <TableColumn fx:id="Lead2BK1000Col" prefWidth="75.0" text="1000ml" />
+            <TableColumn fx:id="Lead1BK250Col" prefWidth="75.0" text="250ml" />
+            <TableColumn fx:id="Lead1BK750Col" prefWidth="75.0" text="750ml" />
+            <TableColumn fx:id="Lead1BK1000Col" prefWidth="75.0" text="1000ml" />
+         </columns>
+      </TableView>
+      <TableView fx:id="UserCopperTable" layoutX="17.0" layoutY="389.0" prefHeight="121.0" prefWidth="539.0">
+         <columns>
+            <TableColumn fx:id="CopperDateCol" prefWidth="96.0" text="Date Submitted" />
+            <TableColumn fx:id="Copper2BK250Col" prefWidth="75.0" text="250ml" />
+            <TableColumn fx:id="Copper2BK750Col" prefWidth="75.0" text="750ml" />
+            <TableColumn fx:id="Copper2BK1000Col" prefWidth="75.0" text="1000ml" />
+            <TableColumn fx:id="Copper1BK250Col" prefWidth="75.0" text="250ml" />
+            <TableColumn fx:id="Copper1BK750Col" prefWidth="75.0" text="750ml" />
+            <TableColumn fx:id="Copper1BK1000Col" prefWidth="75.0" text="1000ml" />
+         </columns>
+      </TableView>
+      <Button fx:id="BackButton" layoutX="584.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleLogout" prefHeight="20.0" prefWidth="66.0" text="Back" />
+      <Text fontSmoothingType="LCD" layoutX="43.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lead">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="125.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2Bottle Kits">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="125.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2Bottle Kits">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="356.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1Bottle Kit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="356.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1Bottle Kit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="34.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copper">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="submitButton1" layoutX="433.0" layoutY="159.0" mnemonicParsing="false" onAction="#handleSubmit" prefHeight="27.0" prefWidth="100.0" text="Reset" />
+   </children>
+</AnchorPane>

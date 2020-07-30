@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProfessionalFunctionManage.EditOWDataController">
+    <children>
+      <Label fx:id="helloTxt" alignment="CENTER_LEFT" layoutX="25.0" layoutY="3.0" prefWidth="400.0" text="Professional-Edit Your Water Test Result">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="welcomeLabel" contentDisplay="CENTER" layoutX="13.0" layoutY="26.0" prefHeight="380.0" prefWidth="599.0" style="-fx-background-color: #3FBFBF;" text="" textAlignment="CENTER" textFill="#56794e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TextField fx:id="STNameField" layoutX="128.0" layoutY="62.0" prefWidth="150.0" />
+      <Label fx:id="StreetNameTag1" alignment="CENTER_RIGHT" layoutX="317.0" layoutY="106.0" text="Zip code">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ZipCodeField" layoutX="386.0" layoutY="103.0" prefWidth="150.0" />
+      <DatePicker fx:id="testDate" layoutX="128.0" layoutY="148.0" prefWidth="150.0" />
+      <Label fx:id="DateTag" alignment="CENTER_RIGHT" layoutX="38.0" layoutY="151.0" text="Date">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="LeadTag" alignment="CENTER_RIGHT" layoutX="152.0" layoutY="178.0" text="Lead">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BKTag" alignment="CENTER_RIGHT" layoutX="62.0" layoutY="197.0" text="2 Bottle Kit">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BK250Tag" alignment="CENTER_RIGHT" layoutX="26.0" layoutY="233.0" text="250ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BK750Tag" alignment="CENTER_RIGHT" layoutX="24.0" layoutY="265.0" text="750ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BK1000Tag" alignment="CENTER_RIGHT" layoutX="20.0" layoutY="297.0" text="1000ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Lead2BK250Field" layoutX="105.0" layoutY="230.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="Lead2BK750Field" layoutX="105.0" layoutY="262.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="Lead2BK1000Field" layoutX="105.0" layoutY="294.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label fx:id="Lead2BKTag1" alignment="CENTER_RIGHT" layoutX="185.0" layoutY="197.0" text="1 Bottle Kit">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BK250Tag1" alignment="CENTER_RIGHT" layoutX="169.0" layoutY="233.0" text="250ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Lead1BK250Field" layoutX="247.0" layoutY="230.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="Lead1BK750Field" layoutX="247.0" layoutY="262.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label fx:id="Lead2BK750Tag1" alignment="CENTER_RIGHT" layoutX="164.0" layoutY="265.0" text="750ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BK1000Tag1" alignment="CENTER_RIGHT" layoutX="160.0" layoutY="297.0" prefHeight="19.0" prefWidth="85.0" text="1000ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Lead1BK1000Field" layoutX="247.0" layoutY="294.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label fx:id="LeadTag1" alignment="CENTER_RIGHT" layoutX="431.0" layoutY="178.0" text="Copper">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BKTag2" alignment="CENTER_RIGHT" layoutX="345.0" layoutY="197.0" text="2 Bottle Kit">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BKTag11" alignment="CENTER_RIGHT" layoutX="483.0" layoutY="197.0" text="1 Bottle Kit">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BK250Tag2" alignment="CENTER_RIGHT" layoutX="323.0" layoutY="233.0" text="250ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Copper2BK250Field" layoutX="403.0" layoutY="230.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label fx:id="Lead2BK750Tag2" alignment="CENTER_RIGHT" layoutX="323.0" layoutY="265.0" text="750ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Copper2BK750Field" layoutX="403.0" layoutY="262.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label fx:id="Lead2BK1000Tag2" alignment="CENTER_RIGHT" layoutX="319.0" layoutY="297.0" text="1000ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Copper2BK1000Field" layoutX="403.0" layoutY="294.0" prefHeight="25.0" prefWidth="50.0" />
+      <Label fx:id="Lead2BK250Tag11" alignment="CENTER_RIGHT" layoutX="461.0" layoutY="233.0" text="250ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BK750Tag21" alignment="CENTER_RIGHT" layoutX="461.0" layoutY="265.0" text="750ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Lead2BK1000Tag21" alignment="CENTER_RIGHT" layoutX="457.0" layoutY="297.0" text="1000ml PPB">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Copper1BK250Field" layoutX="546.0" layoutY="230.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="Copper1BK750Field" layoutX="546.0" layoutY="262.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="Copper1BK1000Field" layoutX="546.0" layoutY="294.0" prefHeight="25.0" prefWidth="50.0" />
+      <Button fx:id="updateButton" layoutX="175.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="27.0" prefWidth="100.0" text="Update" />
+      <Button fx:id="resetButton" layoutX="381.0" layoutY="354.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="27.0" prefWidth="100.0" text="Reset" />
+      <Button fx:id="BackButton" layoutX="618.0" layoutY="26.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="20.0" prefWidth="66.0" text="Back" />
+      <Label fx:id="StreetNameTag2" alignment="CENTER_RIGHT" layoutX="38.0" layoutY="65.0" text="Street Name">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CityTag" alignment="CENTER_RIGHT" layoutX="319.0" layoutY="65.0" text="City">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CityField" layoutX="386.0" layoutY="63.0" prefWidth="150.0" />
+      <Label fx:id="StreetNumTag" alignment="CENTER_RIGHT" layoutX="38.0" layoutY="106.0" text="Street Num">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="STNumField" layoutX="127.0" layoutY="103.0" prefWidth="150.0" />
+      <Label fx:id="Status" alignment="CENTER" layoutX="172.0" layoutY="325.0" prefHeight="21.0" prefWidth="321.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="userStatus" layoutX="197.0" layoutY="421.0" prefHeight="22.0" prefWidth="299.0" textFill="#eb0a0a">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

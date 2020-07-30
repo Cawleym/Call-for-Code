@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="573.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ResidentFunctionManage.UWDataHistoryViewController">
+   <children>
+      <Label fx:id="welcomeLabel" contentDisplay="CENTER" layoutX="22.0" layoutY="40.0" prefHeight="493.0" prefWidth="575.0" style="-fx-background-color: #3FBFBF;" text="" textAlignment="CENTER" textFill="#56794e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="50.0" />
+         </font>
+      </Label>
+      <TableView fx:id="UserLeadTable" layoutX="43.0" layoutY="80.0" prefHeight="200.0" prefWidth="539.0">
+        <columns>
+          <TableColumn fx:id="LeadDateCol" prefWidth="102.0" text="Date Submitted" />
+            <TableColumn fx:id="LeadSNameCol" prefWidth="157.0" text="StreetName" />
+            <TableColumn fx:id="LeadZipCol" prefWidth="59.0" text="Zip" />
+            <TableColumn fx:id="Lead250Col" prefWidth="54.0" text="250ml" />
+            <TableColumn fx:id="Lead750Col" minWidth="0.0" prefWidth="62.0" text="750ml" />
+            <TableColumn fx:id="Lead1000Col" prefWidth="76.0" text="1000ml" />
+        </columns>
+      </TableView>
+      <TableView fx:id="UserCopperTable" layoutX="43.0" layoutY="315.0" prefHeight="200.0" prefWidth="539.0">
+         <columns>
+            <TableColumn fx:id="CopperDateCol" prefWidth="96.0" text="Date Submitted" />
+            <TableColumn fx:id="CopperSNameCol" prefWidth="157.0" text="StreetName" />
+            <TableColumn fx:id="CopperZipCol" prefWidth="59.0" text="Zip" />
+            <TableColumn fx:id="Copper250Col" prefWidth="54.0" text="250ml" />
+            <TableColumn fx:id="Copper750Col" minWidth="0.0" prefWidth="62.0" text="750ml" />
+            <TableColumn fx:id="Copper1000Col" prefWidth="76.0" text="1000ml" />
+         </columns>
+      </TableView>
+      <Label fx:id="helloTXT" layoutX="23.0" layoutY="14.0" text="Your Water Testing Result">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="Status" alignment="CENTER" layoutX="180.0" layoutY="529.0" prefHeight="25.0" prefWidth="239.0" textFill="Blue">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackButton" layoutX="607.0" layoutY="107.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="20.0" prefWidth="66.0" text="Back" />
+      <Button fx:id="EditButton" layoutX="607.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="20.0" prefWidth="66.0" text="Edit" />
+      <Text fontSmoothingType="LCD" layoutX="51.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lead">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="49.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copper">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="DeleteButton" layoutX="607.0" layoutY="201.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="20.0" prefWidth="66.0" text="Delete" />
+      <Label fx:id="userStatus" layoutX="177.0" layoutY="544.0" prefHeight="19.0" prefWidth="309.0" textFill="#e40a0a">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
