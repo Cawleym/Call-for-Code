@@ -67,10 +67,11 @@ public class LoginUIController implements Initializable {
         else { 
              Dashboard(user);
         }*/
-         //MongoDatabase conn =MongoDB.getConnection();
+        // MongoDatabase conn =MongoDB.getConnection();
         
          MongoUser mongo_user= new MongoUser();
          MongoCollection<Document> collectionUser =mongo_user.createCollection(MongoDB.mongoDatabase);
+         //MongoCollection<Document> collectionUser =mongo_user.createCollection(conn);
          User user = mongo_user.loginCheck(collectionUser, username,password);
       if (user == null ){
            errorLabel.setText("Invalid credentials, please try again or create account");   

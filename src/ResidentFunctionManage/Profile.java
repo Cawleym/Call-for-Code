@@ -19,7 +19,7 @@ public class Profile {
     
     public Profile(String UserName, String CurrentLocation, String Hobby, String Job,String WaterChoice, String DataAgree){
         this.UserName = UserName;
-        this.CurrentLocation = UserName;
+        this.CurrentLocation = CurrentLocation;
         this.Hobby = Hobby;
         this.Job = Job;
         this.WaterChoice = WaterChoice;

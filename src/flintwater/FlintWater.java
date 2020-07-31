@@ -30,7 +30,7 @@ public class FlintWater extends Application {
        
      Parent root = FXMLLoader.load(getClass().getResource("/UserManage/LoginUI.fxml"));
      
-       conn =MongoDB.getConnection();
+       MongoDB.getConnection();
        stage =  primaryStage;
        Scene scene = new Scene(root);
        primaryStage.setTitle("Flint Water Testing System");
