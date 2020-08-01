@@ -31,7 +31,7 @@ public class MongoProfile {
     public MongoCollection createCollection(MongoDatabase mongoDatabase){
        
        MongoCollection<Document> collection = mongoDatabase.getCollection("Profile");
-       System.out.println("Create collection successfully");
+       //System.out.println("Create collection successfully");
        return  collection;
      }
     

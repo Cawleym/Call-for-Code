@@ -33,7 +33,7 @@ public class MongoUser {
     public MongoCollection createCollection(MongoDatabase mongoDatabase){
          
        MongoCollection<Document> collection = mongoDatabase.getCollection("User");
-       System.out.println("Create collection successfully");
+       //System.out.println("Create collection successfully");
        return  collection;
      }
      

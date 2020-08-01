@@ -30,7 +30,7 @@ public class MongoResidentWaterData {
       public MongoCollection createCollection(MongoDatabase mongoDatabase){
           
        MongoCollection<Document> collection = mongoDatabase.getCollection("ResidentData");
-       System.out.println("Create collection ResidentData successfully");
+       //System.out.println("Create collection ResidentData successfully");
        return  collection;
      }
       /** 

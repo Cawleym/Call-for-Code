@@ -33,7 +33,7 @@ public class MongoProfessionalWaterData {
      public MongoCollection createCollection(MongoDatabase mongoDatabase){
           // 连接到集合
        MongoCollection<Document> collection = mongoDatabase.getCollection("ProfessionalWaterData");
-       System.out.println("Create collection ProfessionalWaterData successfully");
+       //System.out.println("Create collection ProfessionalWaterData successfully");
        return  collection;
      }
  

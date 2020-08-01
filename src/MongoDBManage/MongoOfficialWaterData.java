@@ -27,9 +27,9 @@ import org.bson.conversions.Bson;
  */
 public class MongoOfficialWaterData {
     public MongoCollection createCollection(MongoDatabase mongoDatabase){
-          // 连接到集合
+          
        MongoCollection<Document> collection = mongoDatabase.getCollection("OfficialWaterData");
-       System.out.println("Create collection OfficialWaterData successfully");
+       //System.out.println("Create collection OfficialWaterData successfully");
        return  collection;
      }
     
